@@ -1,0 +1,7 @@
+things for my waptrick site
+-i need to learn positions
+-i need to check on margin 0 auto
+-more knowledge on padding
+-how to style anchor tags
+-editing inputs
+-removing bullet points

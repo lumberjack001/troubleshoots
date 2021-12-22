@@ -1,0 +1,221 @@
+/*
+*{
+    width:100%;
+}
+*/
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+.top-nav {
+    margin: 0 auto;
+    width: 50%;
+    height: 60px;
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 0 0 10px 10px ;
+    box-shadow: 0 0 10px #777777;
+    position: relative;
+}
+/*logo design*/
+#logo {
+    position: relative;
+    left: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.699)
+}
+
+nav {
+    border:1px solid #8db43d;
+    /*border-bottom: none;*/
+    width: 100%;
+    height: auto;
+    background-color: #8db43d;
+    /*position: relative;*/
+    left: -0.9px;
+    top:0.4px ;
+    
+}
+.menu {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+    display: none;
+    
+}
+label {
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    /*display: none;*/
+    
+}
+#list li {
+    display: inline-block;
+    padding: 4px;
+    /*position: relative;*/
+    left: 120px;
+    bottom: 5px;
+}
+#list li a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.05em;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.658)
+}
+.tablelist {
+    border:1px solid #efefef;
+    margin:0 auto;
+    width: 50%;
+    border-top: none;
+    position: relative;
+    bottom: 0px;
+    box-shadow:0 0 10px;
+}
+.list {
+    border-bottom: 1px solid #999;
+    padding: 2px;
+    list-style-type: none;
+    background: #efefef;
+}
+.image_container {
+    padding: 18px;
+}
+.headings {
+    position: relative;
+    right: 1px;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.651);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.9)
+}
+.subtitles {
+    font-style: oblique;
+    font-size: 0.90em;
+    color: #999;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.9)
+}
+.padding {
+    position: relative;
+    left: 4px;
+    bottom: 10px;
+    text-transform: capitalize;
+}
+/* responsiveness*/
+@media screen and (max-width: 1000px) {
+    .tablelist {
+        width: 100%;
+        box-shadow: none;
+    }
+    .top-nav {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    article {
+        position: relative;
+        bottom: 25px;
+    }
+    #list {
+        display: flex;
+        /*flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;*/
+    }
+    #list li {
+        width:25%;
+    }
+    #list li a {
+        text-transform: uppercase;
+        text-shadow: none;
+    }
+   
+}
+@media screen and (max-width: 900px)  {
+    /*body{
+        overflow-x: hidden;
+    }
+    nav {
+        border: 1px solid #d9d9d9; 
+    }
+    #list {
+        position: absolute;
+        right: 0px;
+        top: -2vh;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #d9d9d9;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    #list li{
+        opacity: 0;
+    }
+    #list li a{
+        text-transform: uppercase;
+        text-shadow: none;
+        letter-spacing: 0.7px;
+    }
+    label {
+        display: block;
+    }
+   .menu{
+       display: block;
+       margin-right: 10px;
+       font-size: 20px;
+       
+   }
+   #toggle{
+       display: none;
+   }
+   #toggle:checked {
+       transform: translateX(0);
+   }*/
+   body{
+    overflow-x: hidden;
+}
+   #list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d9d9d9;
+    transition: transform 0.5s ease-in;
+    display: none;
+   }
+   nav {
+    border: 1px solid #d9d9d9;
+    background-color: #d9d9d9; 
+}
+    .menu{
+    display: block;
+    margin-right: 10px;
+    font-size: 20px;
+   
+}
+    #toggle{
+   display: none;
+}
+#toggle:checked + #list {
+    display: block;
+}
+}
